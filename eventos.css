@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+ /* FONTE DE TEXTO DO SITE */
+@font-face {
+    font-family:Gobold Bold;
+    src: url(fonts/Gobold\ Bold\ Italic.otf) format('opentype');
+}
+
+@font-face {
+    font-family: Espera;
+    src: url(fonts/Espera-Italic.ttf) format('opentype');
+}
+
+/* INTERAÇÃO SUAVE ENTRE MENU */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100%;
+    background-color: #dbdbdb;
+}
+
+header{
+    padding-bottom: 4rem;
+}
+
+/* IMAGEM HEADER */
+.header-paralax2{ 
+    background-image: url(imagens/templates/eventos-web.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fundo-ondulado-2{
+    height: 25rem;
+    width: 100%;
+    margin-top: 150px
+}
+
+/* BOX DO MENU INTERAÇÃO */
+.box-menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    background-color: #0b0a0a9f;
+}
+
+
+
+/* LARGURA DO BOX MENU */
+.box-largura-menu{
+    width: 1200px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+/* IMAGEM DO MENU */
+.box-largura-menu img{ 
+    height: 65px;
+    width: 65px;
+    border-radius: 400px;
+}
+
+/* TEXTO DO MENU */
+.nav ul{
+    display: flex;
+    gap: 25px;
+}
+
+/* TEXTO DO MENU 2 */ 
+.nav ul li{ 
+    color: #ffff;
+    font-family: Espera;
+    font-size: 1.1rem;
+}
+
+
+/* ANIMAÇÃO NO TEXTO MENU */
+.nav ul li:hover{
+    color: rgb(145, 145, 9);
+    transition-duration: 0.5s;
+}
+
+.header-paralax2 h1{
+    font-family: Gobold Bold;
+    color: #ffff;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 15rem;
+}
+
+.box-eventos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 4rem 1rem;
+    margin: 20px;
+    gap: 80px;
+}
+
+.figure-flex{
+    background-color: #cecdcd52;
+    box-shadow: #0b0a0a5b 5px 5px 15px;
+    margin-bottom: 60px;
+    max-width: 380px;
+}
+
+.figure-flex img{
+    width: 380px;
+    height: 250px;
+}
+
+
+.figure-text{
+    max-width: 380px;
+    padding: 10px;
+}
+
+.figure-text h3{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+.figure-text{
+    height: 180px;
+}
+
+.figure-text p{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.figure-text button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #bbbb07;
+    font-size: 14px;
+    margin-top: 50px;
+    
+
+}
+
+.figure-text button:hover{
+    background-color: #a5a505;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+
+
+/* PARTE MENU MOBILE */
+.nav-button{
+    border:0;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #bbbb07;
+    margin: 8px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-button i{
+    color:#0B0A0A;
+}
+
+.overlay{ /* MENU MOBILE */
+    display: none;
+}
+
+/* TITULO */
+.header-paralax2 h1{
+    font-family: Gobold Bold;
+    color: #ffff;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 15rem;
+}
+
+
+/* LETRA S COM COR */
+.h1-menu{
+    color:#bbbb07;
+}
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------*/
+
+/*PARTE REPULSIVA DO EVENTOS */
+@media (max-width: 900px) {
+     /* PARTE DO MENU MOBILE */
+
+    .header-paralax2{
+        background-image: url(imagens/templates/eventos-mobile.png);
+    }
+
+     .nav{
+        display: none;
+    }
+
+    .box-menu{
+        background: none;
+    }
+
+    .box-menu img{
+        display: none
+    }
+
+    .box-largura-menu{
+        justify-content: flex-end;
+    }
+    .nav-button{
+        display: block;
+
+    }
+
+    .overlay{
+        display: block;
+        height: 100%;
+        background-color: #dbdb0ed8;
+        z-index: 9;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+        transition: ease-in 0.5s;
+    }
+
+
+    .overlay-content{
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay a{
+        padding: 8px;
+        text-decoration: none;
+        color: #0B0A0A;
+        display: block;
+        font-family: Gobold Bold;
+        font-weight: 300;
+        font-size: 25px;
+        transition: 0.3s;
+    }
+
+    .overlay a:hover, .overlay a:focus{
+        color: #333333;
+    }
+
+    .overlay .closebtn{
+        position: absolute;
+        top: 1px;
+        right:25px;
+        font-size: 60px;
+    }
+
+    .header-paralax2 h1{
+        font-size: 4rem
+    }
+}
+
+@media (max-width: 450px) {
+
+    .header-paralax2{
+        background-image: url(imagens/templates/eventos-mobile-2.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .header-paralax2 h1{
+        font-size: 3.5rem;
+    }
+}

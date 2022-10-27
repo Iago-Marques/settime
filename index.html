@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/icones/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>SetTime Cronometragem</title>
+</head>
+<body>
+
+    <header> <!--INICIO HEADER-->
+        <section class="header-paralax" id="inicio"> <!--INICIO HEADER PARALAX-->
+
+            <div class="box-menu"> <!--INICIO BOX MENU-->
+                <div class="box-largura-menu"> <!--BOX LARGURA DO MENU-->
+                    <img src="imagens/icones/settime-logo.jpeg" alt="logo tipo settime">
+
+                    <div id="myNav" class="overlay"> <!--Overlay menu   mobile-->
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                        <div class="overlay-content">
+
+                            
+                            <a href="#inicio" onclick="closeNav()">Inicio</a>
+                            <a href="#quem-somos" onclick="closeNav()">Quem Somos</a>
+                            <a href="#servicos" onclick="closeNav()">Serviços</a>
+                            <a href="#contatos" onclick="closeNav()">Contatos</a>
+                            <a href="eventos.html" onclick="closeNav()">Eventos</a>
+                            <a href="resultados.html" onclick="closeNav()">Resultados</a>
+                        </div>
+                        
+                    </div> <!--FIM menu mobile-->
+
+                    <button class="nav-button" onclick="openNav()">
+                        <i class="fa-solid fa-bars fa-2x"></i>
+                    </button>
+
+                    <nav class="nav"> <!--MENU-->
+                        <ul>
+                            <a href="#inicio"><li>Inicio</li></a>
+                            <a href="#quem-somos"><li>Quem Somos</li></a>
+                            <a href="#servicos"><li>Serviços</li></a>
+                            <a href="#contatos"><li>Contatos</li></a>
+                            <a href="eventos.html"><li>Eventos</li></a>
+                            <a href="resultados.html"><li class="resultado">Resultados</li></a>
+                        </ul>
+                    </nav> <!--FIM MENU-->
+                </div> <!--FIM BOX LARGURA MENU-->
+            </div> <!--FIM BOX MENU-->
+
+            <h1><span class="h1-menu">Set</span>Time</h1>
+            <p class="text-h1">Crono<span class="h1-menu">metragem</span></p>
+
+            <p>Settime é uma empresa criada em 2016, especializada em cronometragem eletrônica de corridas de rua, triathlon, duathlon, ciclismo, natação e  travessias.
+            </p>
+
+            <div class="redes-sociais"> <!--REDES SOCIAIS-->
+                <a href="https://pt-br.facebook.com/settimesp/" target="_blank" rel="external"><img src="imagens/icones/facebook-cor.png" alt="ícone facebook"></a>
+
+                <a href="https://api.whatsapp.com/send?phone=5511983047892" target="_blank" rel="external"><img src="imagens/icones/whatsapp-cor.png" alt="ícone whatsapp"></a>
+
+                <a href="https://www.instagram.com/settimesp/" target="_blank" rel="external"><img src="imagens/icones/instagram-cor.png" alt="ícone instagram"></a>
+            </div> <!--FIM REDES SOCIAIS-->
+
+            <img class="fundo-ondulado" src="imagens/templates/fundo-branco.png" alt="fundo-ondulado">
+        </section> <!--FIM HEADER PARALAX-->    
+    </header> <!--FIM HEADER-->
+        
+
+
+    
+    <main> <!--INICIO MAIN-->
+        <section class="quem-somos" id="quem-somos"> <!--INICIO QUEM SOMOS-->
+            <h1><span class="h1-titulo">|</span> Nossa Empresa</h1>
+
+            <div class="quem-somos-text-img"> <!--QUEM SOMOS TEXT IMG-->
+                <div class="quem-somos-box-cor">
+                    <p>Settime é uma empresa criada em 2016, especializada em cronometragem eletrônica de corridas de rua, triathlon, duathlon, ciclismo, natação e  travessias.
+                    Nossa qualidade nos serviços prestados é resultado de um constante trabalho e inovações, tecnologias para que possamos oferecer o que há de melhor em cronometragem aos nossos clientes e parceiros.</p>
+                </div>
+
+                <img src="imagens/templates/finish-line-bro.png" alt="ilustração corrida">
+            </div> <!--FIM QUEM SOMOS TEXT IMG-->
+
+            <div class="quem-somos-box-text"> <!--INICIO BOX INFOMAÇÕES-->
+
+                <div class="box-text"> <!--BOX TEXT 1-->
+                    <img src="imagens/icones/atletas.png" alt="ícone atleta">
+
+                    <h3>+ 10.000</h3>
+
+                    <P>+ de 10.000 mil atletas cronometrados em 2017.<P>
+                </div>
+
+                <div class="box-text"> <!--BOX TEXT 2-->
+                    <img src="imagens/icones/verificar.png" alt="ícone de verificado">
+
+                    <h3>650</h3>
+
+                    <P>+ de 650 clientes atendidos</P>
+                </div>
+
+                <div class="box-text"> <!--BOX TEXT 3-->
+                    <img src="imagens/icones/foguete.png" alt="ícone de foguete">
+
+                    <h3>610</h3>
+
+                    <P>Eventos realizados em 2017 - cerca de  4 eventos por fim de semana</P>
+                </div>
+            </div> <!--FIM BOX INFORMAÇOES-->
+        </section> <!--FIM QUEM SOMOS-->
+
+
+
+        <section class="servicos" id="servicos"> <!--INICIO SERVIÇOS-->
+            <h1><span class="h1-titulo">|</span> Serviços</h1>
+
+            <div class="box-servicos"> <!--INICIO BOX SERVIÇOS-->
+
+                <div class="box-servico-img-text" class="box1"> <!--SERVIÇO 1-->
+                    <img src="imagens/icones/cronometro-branco.png" alt="ícone de cronometragem">
+
+                    <p>Cronometragem</p>
+                </div>
+
+                <div class="box-servico-img-text" class="box2"> <!--SERVIÇO 2-->
+                    <img src="imagens/icones/numero-peito.png" alt="ícone numero de peito">
+
+                    <p>Numero de peito</p>
+                </div>
+
+                <div class="box-servico-img-text" class="box3"> <!--SERVIÇO 3-->
+                    <img src="imagens/icones/sms.png" alt="ícone de SMS">
+
+                    <p>SMS</p>
+                </div>
+
+                <div class="box-servico-img-text" class="box4"> <!--SERVIÇO 4-->
+                    <img src="imagens/icones/resultados.png" alt="ícone de resultado">
+
+                    <p>Resultado</p>
+                </div>
+
+                <div class="box-servico-img-text" class="box5"> <!--SERVIÇO 5-->
+                    <img src="imagens/icones/relogio-digital.png" alt="ícone de relógio digital">
+
+                    <p>Relógio pórtico</p>
+                </div>
+
+                <div class="box-servico-img-text" class="box6"> <!--SERVIÇO 6-->
+                    <img src="imagens/icones/carro-com-relogio.png" alt="ícone carro com relógio">
+
+                    <p>Relógio de carro madrinha</p>
+                </div>
+
+                <div class="box-servico-img-text" class="box7"> <!--SERVIÇO 7-->
+                    <img src="imagens/icones/kit-entrega.png" alt="ícone kit de entrega">
+
+                    <p>Entrega de kits</p>
+                </div>
+
+                <div class="box-servico-img-text" class="box8"> <!--SERVIÇO 8-->
+                    <img src="imagens/icones/linha-de-chegada.png" alt="ícone linha de chegada">
+
+                    <p>Ponto de controle de percurso</p>
+                </div>
+
+            </div> <!--FIM BOX SERVIÇOS-->
+        </section><!--FIM SERVIÇOS-->
+
+        <section class="meta-paralax"> <!--META-->
+            <div class="meta-paralax-text">
+                <h1>Meta</h1>
+                <p>Procuramos atender a necessidade do organizador e proporcionar a maior tranquilidade nos eventos, satisfação, foco nos atletas participantes, realização e respeitando os seus desafios.</p>
+            </div>
+        </section> <!--FIM META-->
+        
+        
+    
+        <section class="contatos" id="contatos"> <!--INICIO CONTATOS-->
+            <div class="box-contatos"> <!--BOX CONTATOS-->
+                <h1><span class="h1-titulo">|</span> Contatos</h1>
+
+                <p>Contatos para orçamentos, dúvidas e entre outras.</p>
+
+                <div class="contatos-redes-sociais"> <!--REDES SOCIAIS-->
+                    <a href="https://pt-br.facebook.com/settimesp/" target="_blank" rel="external"><img src="imagens/icones/facebook-cor.png" alt="ícone facebook"></a>
+
+                    <a href="https://api.whatsapp.com/send?phone=5511983047892" target="_blank" rel="external"><img src="imagens/icones/whatsapp-cor.png" alt="ícone whatsapp"></a>
+
+                    <a href="https://www.instagram.com/settimesp/" target="_blank" rel="external"><img src="imagens/icones/instagram-cor.png" alt="ícone instagram"></a>
+                </div>
+            </div> <!--BOX CONTATOS-->
+             
+            <img class="img-contatos" src="imagens/templates/social-networking-bro.png" alt="ícone networking">
+
+        </section><!--FIM CONTATOS-->
+    </main><!--FIM MAIN-->
+
+
+    <footer> <!--INICIO FOOTER-->
+
+        <img class="fundo-ondulado-amarelo" src="imagens/templates/fundo-amarelo.png" alt="">
+
+        <section class="footer-img-text"> <!--INICIO BOX IMG E ENDEREÇO-->
+            <img class="logo-footer" src="imagens/icones/settime-logo.jpeg" alt="ícone logotipo">
+
+            <div class="img-endereco">
+
+                <img src="imagens/icones/mapas-e-bandeiras.png" alt="ícone de mapas">
+
+                <p>Taboão da Serra SP</p>
+            </div>
+        </section> <!--FIM IMG ENDEREÇO-->
+
+        <hr>
+
+        <section class="direitos-autorais"> <!--INICIO BOX DIREITOS AUTORAIS-->
+            <p>TODOS OS DIREITOS RESERVADOS. PROIBIDA A CÓPIA OU REPRODUCÃO DO CONTEÚDO SEM AUTORIZAÇÃO PRÉVIA.</p>
+
+            <p>Criador do Site - <a href="https://iago-marques.github.io/portifolio/#inicio" target="_blank" rel="external">Iago Marques</a></p>
+        </section> <!--FIM DIREITOS AUTORAIS-->
+    </footer> <!--FIM FOOTER-->
+
+</body>
+</html>

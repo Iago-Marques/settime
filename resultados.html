@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/icones/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="resultados.css">
+    <link rel="stylesheet" href="style.css"> <!--Página inicial-->
+    <script type="text/javascript" src="script.js"></script>
+    <title>Resultados</title>
+</head>
+
+<body>
+    <header> <!--INICIO HEADER-->
+        <section class="header-paralax3" id="inicio"> <!--INICIO HEADER PARALAX-->
+
+            <div class="box-menu"> <!--INICIO BOX MENU-->
+                <div class="box-largura-menu"> <!--BOX LARGURA DO MENU-->
+                    <img src="imagens/icones/settime-logo.jpeg" alt="logo tipo settime">
+
+                    <div id="myNav" class="overlay"> <!--Overlay menu   mobile-->
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                        <div class="overlay-content" id="myNav2">
+                            <a href="index.html">Inicio</a>
+                            <a href="index.html">Quem Somos</a>
+                            <a href="index.html">Serviços</a>
+                            <a href="index.html">Contatos</a>
+                            <a href="eventos.html">Eventos</a>
+                            <a href="resultados.html">Resultados</a>
+                        </div>
+                        
+                    </div> <!--FIM menu mobile-->
+
+                    <button class="nav-button" onclick="openNav()">
+                        <i class="fa-solid fa-bars fa-2x"></i>
+                    </button>
+
+                    <nav class="nav"> <!--MENU-->
+                        <ul>
+                            <a href="index.html" onclick="closeNav()"><li>Inicio</li></a>
+
+                            <a href="index.html" onclick="closeNav()"><li>Quem Somos</li></a>
+
+                            <a href="index.html" onclick="closeNav()"><li>Serviços</li></a>
+
+                            <a href="index.html" onclick="closeNav()"><li>Contatos</li></a>
+
+                            <a href="eventos.html" onclick="closeNav()"><li>Eventos</li></a>
+
+                            <a href="resultados.html" onclick="closeNav()"><li class="resultado">Resultados</li></a>
+                        </ul>
+                    </nav> <!--FIM MENU-->
+                </div> <!--FIM BOX LARGURA MENU-->
+            </div> <!--FIM BOX MENU-->
+
+            <h1>Resultados</h1>
+
+            <img class="fundo-ondulado-3" src="imagens/templates/fundo-branco.png" alt="Ilustração de imagem">
+        </section>
+    </header>
+
+    <main class="resultados-content">
+
+        <!--CAIXA DE RESULTADO-->
+        <div id="box-resultados" class="box-resultados">
+
+            <!--IMAGEM RESULTADO-->
+            <img src="imagens/resultados/24-07-22-pantera-negra.jpeg" alt="Resultados do evento Pantera Negra">
+
+            <nav>
+                <ul class="dropdown-menu">
+                    <li><a href="#box-resultado">Masculino &#9660</a>
+                        <ul class="dropdown-submenu">
+
+                            <!--CAIXA DE PDF MASCULINO-->
+                            <li><a href="resultados-pdf/pdf-pantera/RELATORIO-MASCULINO-GERAL.pdf" target="_blank" rel="external">Relatório Geral</a></li>
+
+                            <!--CAIXA DE PDF MASCULINO-->
+                            <li><a href="resultados-pdf/pdf-pantera/RELATORIO-POR-FAIXAS-ETARIAS-MASCULINO.pdf" target="_blank" rel="external">Faixa Etária</a></li>
+                        </ul>
+                    </li>
+    
+    
+                    <li><a href="#box-resultado">Feminino &#9660</a>
+                        <ul class="dropdown-submenu">
+
+                            <!--CAIXA DE PDF FEMININO-->
+                            <li><a href="resultados-pdf/pdf-pantera/RELATORIO-FEMININO-GERAL.pdf" target="_blank" rel="external">Relatório Geral</a></li><
+                            <!--FIM CAIXA PDF-->
+
+
+                            <!--CAIXA DE PDF FEMININO-->
+                            <li><a href="resultados-pdf/pdf-pantera/RELATORIO-POR-FAIXAS-ETARIAS-FEMININO.pdf" target="_blank" rel="external">Faixa Etária</a></li>
+                            <!--FIM CAIXA PDF-->
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--FIM CAIXA DE RESULTADO-->  
+
+        <!--INICIO CAIXA DE RESULTADO-->
+        <div id="box-resultado2" class="box-resultados">
+
+            <!--COLOCAR IMAGEM-->
+            <img src="imagens/resultados/25-08-22-corre-saopaulo.jpeg" alt="Resultado do evento Corre São Paulo">
+
+            <nav>
+                <ul class="dropdown-menu">
+
+                    <li><a href="#box-resultado2">Masculino &#9660</a>
+                        <ul class="dropdown-submenu">
+
+                            <!--CAIXA DE PDF MASCULINO-->
+                            <li><a href="resultados-pdf/pdf-corre-saopaulo/RELATORIO-GERAL-5KM-MASCULINO.pdf" target="_blank" rel="external">Relatório Geral</a></li>
+                            <!--FIM CAIXA PDF-->
+                        </ul>
+                    </li>
+    
+    
+                    <li><a href="#box-resultado2">Feminino &#9660</a>
+                        <ul class="dropdown-submenu">
+
+                            <!--CAIXA DE PDF FEMININO-->
+                            <li><a href="resultados-pdf/pdf-corre-saopaulo/RELATORIO-GERAL-5KM-FEMININO.pdf" target="_blank" rel="external">Relatório Geral</a></li>
+                            <!--FIM CAIXA PDF-->
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div> 
+        <!--FIM CAIXA RESULTADO-->
+
+        <!--INICIO CAIXA RESULTADO-->
+        <div id="box-resultado3" class="box-resultados">
+
+            <!--COLOCAR IMAGEM-->
+            <img src="imagens/resultados/08-10-22-terrax3.jpeg" alt="Resultado do evento Terra X3">
+
+            <nav>
+                <ul class="dropdown-menu">
+                    <li><a href="#box-resultado3">Masculino &#9660</a>
+                        <ul class="dropdown-submenu">
+
+                            <!--CAIXA DE PDF MASCULINO-->
+                            <li><a href="resultados-pdf/TERRA-X3-08-10-22/TERRAX3-TRAIL-RUN-RELATORIO GERAL MASCULINO TRAIL RUN.pdf" target="_blank" rel="external">Relatório Geral Trail Run</a></li>
+                            <!--FIM CAIXA PDF-->
+
+                            <!--CAIXA DE PDF MASCULINO-->
+                            <li><a href="resultados-pdf/TERRA-X3-08-10-22/TERRAX3-MARATONA-AQUATICA-RELATORIO GERAL MASCULINO MARATONA AQUATICA.pdf" target="_blank" rel="external">Relatório Geral Aquática</a></li>
+                            <!--FIM CAIXA PDF-->
+
+                            <!--CAIXA DE PDF MASCULINO-->
+                            <li><a href="resultados-pdf/TERRA-X3-08-10-22/RELATORIO-GERAL-DUATHLON-MASCULINO.pdf" target="_blank" rel="external">Relatório Geral Duathlon</a></li>
+                            <!--FIM CAIXA PDF-->
+
+                            <!--CAIXA DE PDF MASCULINO-->
+                            <li><a href="resultados-pdf/TERRA-X3-08-10-22/RELATORIO-GERAL-TRIATHLON-MASCULINO.pdf" target="_blank" rel="external">Relatório Geral Triathlon</a></li>
+                            <!--FIM CAIXA PDF-->
+
+                            <!--CAIXA DE PDF MASCULINO-->
+                            <li><a href="resultados-pdf/TERRA-X3-08-10-22/RELATORIO-GERAL-TRIATHLON-MASCULINO-REVEZAMENTO.pdf" target="_blank" rel="external">Relatório Geral Triathlon Revezamento</a></li>
+                            <!--FIM CAIXA PDF-->
+                        </ul>
+                    </li>
+    
+    
+                    <li><a href="#box-resultado3">Feminino &#9660</a>
+                        <ul class="dropdown-submenu">
+    
+                            <!--CAIXA PDF FEMININO-->
+                            <li><a href="resultados-pdf/TERRA-X3-08-10-22/TERRAX3-TRAIL-RUN-RELATORIO GERAL FEMININO TRAIL RUN.pdf" target="_blank" rel="external">Relatório Geral Trail Run</a></li>
+                            <!--FIM CAIXA PDF-->
+
+                            <!--CAIXA PDF FEMININO-->
+                            <li><a href="resultados-pdf/TERRA-X3-08-10-22/TERRAX3-MARATONA-AQUATICA-RELATORIO GERAL FEMININO MARATONA AQUATICA.pdf" target="_blank" rel="external">Relatório Geral Aquático</a></li>
+                            <!--FIM CAIXA PDF-->
+
+                            <!--CAIXA PDF FEMININO-->
+                            <li><a href="resultados-pdf/TERRA-X3-08-10-22/RELATORIO-GERAL-DUATHLON-FEMININO.pdf" target="_blank" rel="external">Relatório Geral Duathlon</a></li>
+                            <!--FIM CAIXA PDF-->
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div id="box-resultado4" class="box-resultados">
+            <img src="imagens/resultados/15-10-22-cantareira5krun.jpeg" alt="Resultado do evento Corre São Paulo">
+
+            <nav>
+                <ul class="dropdown-menu">
+                    <li><a href="#box-resultado4">Masculino &#9660</a>
+                        <ul class="dropdown-submenu">
+
+                            <!--CAIXA PDF MASCULINO-->
+                            <li><a href="resultados-pdf/cantareira-3-edicao/RELATORIO-GERAL-MASCULINO-CORRIDA-CANTAREIRA-RUN-3-EDICAO.pdf" target="_blank" rel="external">Relatório Geral</a></li>
+                            <!--FIM CAIXA PDF-->
+                        </ul>
+                    </li>
+    
+    
+                    <li><a href="#box-resultado4">Feminino &#9660</a>
+                        <ul class="dropdown-submenu">
+
+                            <!--CAIXA PDF FEMININO-->
+                            <li><a href="resultados-pdf/cantareira-3-edicao/RELATORIO-GERAL-FEMININO-CORRIDA-CANTAREIRA-RUN-3-EDICAO.pdf" target="_blank" rel="external">Relatório Geral</a></li>
+                            <!--FIM CAIXA PDF-->
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div> 
+
+    </main>
+
+
+    <footer> <!--INICIO FOOTER-->
+
+        <img class="fundo-ondulado-amarelo" src="imagens/templates/fundo-amarelo.png" alt="">
+
+        <section class="footer-img-text"> <!--INICIO BOX IMG E ENDEREÇO-->
+            <img class="logo-footer" src="imagens/icones/settime-logo.jpeg" alt="ícone logotipo">
+
+            <div class="img-endereco">
+
+                <img src="imagens/icones/mapas-e-bandeiras.png" alt="ícone de mapas">
+
+                <p>Taboão da Serra SP</p>
+            </div>
+        </section> <!--FIM IMG ENDEREÇO-->
+
+        <hr>
+
+        <section class="direitos-autorais"> <!--INICIO BOX DIREITOS AUTORAIS-->
+            <p>TODOS OS DIREITOS RESERVADOS. PROIBIDA A CÓPIA OU REPRODUCÃO DO CONTEÚDO SEM AUTORIZAÇÃO PRÉVIA.</p>
+
+            <p>Criador do Site - <a href="https://iago-marques.github.io/portifolio/#inicio" target="_blank" rel="external">Iago Marques</a></p>
+        </section> <!--FIM DIREITOS AUTORAIS-->
+    </footer> <!--FIM FOOTER-->
+    
+</body>
+</html>

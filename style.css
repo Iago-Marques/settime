@@ -1,0 +1,680 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+ /* FONTE DE TEXTO DO SITE */
+@font-face {
+    font-family:Gobold Bold;
+    src: url(fonts/Gobold\ Bold\ Italic.otf) format('opentype');
+}
+
+@font-face {
+    font-family: Espera;
+    src: url(fonts/Espera-Italic.ttf) format('opentype');
+}
+
+/* INTERAÇÃO SUAVE ENTRE MENU */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100%;
+    width: 100%;
+}
+
+/* IMAGEM HEADER */
+.header-paralax{ 
+    background-image: url(imagens/templates/img-fullweb.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 60rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* BOX DO MENU INTERAÇÃO */
+.box-menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    background-color: #0b0a0a9f;
+}
+
+
+
+/* LARGURA DO BOX MENU */
+.box-largura-menu{
+    width: 1200px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+/* IMAGEM DO MENU */
+.box-largura-menu img{ 
+    height: 65px;
+    width: 65px;
+    border-radius: 400px;
+}
+
+/* TEXTO DO MENU */
+.nav ul{
+    display: flex;
+    gap: 25px;
+}
+
+/* TEXTO DO MENU 2 */ 
+.nav ul li{ 
+    color: #ffff;
+    font-family: Espera;
+    font-size: 1.1rem;
+}
+
+
+/* ANIMAÇÃO NO TEXTO MENU */
+.nav ul li:hover{
+    color: rgb(145, 145, 9);
+    transition-duration: 0.5s;
+}
+
+.resultado{
+    background-color: #bbbb07;
+    padding: 2px 8px;
+    border-radius: 15px;
+}
+
+.resultado:hover{
+    background-color: #ffff00;
+    animation-duration: 0.8s;
+}
+
+/* PARTE MENU MOBILE */
+.nav-button{
+    border:0;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #bbbb07;
+    margin: 8px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-button i{
+    color:#0B0A0A;
+}
+
+.overlay{ /* MENU MOBILE */
+    display: none;
+}
+
+/* TITULO */
+.header-paralax h1{
+    font-family: Gobold Bold;
+    color: #ffff;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 15rem;
+}
+
+/* CRONOMETRAGEM H1 */
+.header-paralax .text-h1{
+    font-size: 1.8rem;
+    letter-spacing: 15px;
+    text-align: center;
+    font-family: Gobold Bold;
+    padding: 0 0 80px 0;
+}
+
+/* TEXTO PRINCIPAL */
+.header-paralax p{
+    font-family: Espera;
+    font-size: 1.6rem;
+    color: #ffff;
+    text-align: center;
+    max-width: 650px;
+    padding-bottom: 8rem;
+}
+
+/* SET E METRAGEM COM COR */
+.h1-menu{
+    color:#bbbb07;
+}
+
+/* ESPAÇO ENTRE IMAGENS REDES SOCIAIS */
+.header-paralax .redes-sociais img{
+    width: 50px;
+    margin: 0 30px;
+}
+
+.fundo-ondulado{
+    width: 100%;
+    height: 40rem;
+    margin-top: -10px;
+}
+
+/*FIM HEADER */
+
+
+
+/*INICIO CONTEUDO PRINCIPAL */
+main{
+    font-family: Espera;
+    font-weight: 600;
+}
+
+/* DECORAÇÃO NOS TITULOS CONTEUDO PRINCIPAL */
+.h1-titulo{
+    color: #0602d8;
+}
+
+/* QUEM SOMOS */
+.quem-somos{
+ background-color: #dbdbdb;
+}
+
+/* TITULO */
+.quem-somos h1{
+    font-family: Gobold Bold;
+    font-size: 3.5rem;
+    padding: 10rem 0;
+    text-align: center;
+}
+
+/* ALINHAMENTO DA CAIXA TEXTO E IMAGEM */
+.quem-somos-text-img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.quem-somos-box-cor{
+    background-color: #bbbb07;
+    height: 350px;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 0;
+    border: solid 0.5px rgba(0, 0, 0, 0.651)
+
+}
+
+/* TAMANHO DA IMAGEM */
+.quem-somos-text-img img{
+    width: 600px;
+    padding-bottom: 100px;
+}
+
+/* TAMANHO DA CAIXA DO TEXTO*/
+.quem-somos-text-img p{
+    max-width: 550px;
+    text-align: justify;
+    font-size: 1.3rem;
+    padding: 0 5px;
+}
+
+/* BOX DE INFORMAÇOES */
+.quem-somos-box-text{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 5rem;
+}
+
+/* CUSTUMIZAÇÃO DOS BOX INFOORMAÇÕES*/
+.box-text{
+    background-color: #5F5C5C;
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
+    border: solid 0.5px rgba(0, 0, 0, 0.651);
+    box-shadow: rgba(0, 0, 0, 0.39) 5px 10px 15px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* ÍCONES DO BOX TEXTOS */
+.box-text img{
+    max-width: 45px;
+    margin-top: 25px;
+}
+
+/* TITULO DO BOX TEXTO */
+.box-text h3{
+    font-size: 2rem;
+    padding: 15px;
+}
+
+/* FIM QUEM SOMOS */
+
+/*INICIO SERVIÇOS */
+
+.servicos{
+    background-color: #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicos h1{
+    font-family: Gobold Bold;
+    font-size: 3.5rem;
+    padding: 100rem 0;
+    text-align: center;
+    padding: 5rem ;
+}
+
+.box-servicos{
+    display: grid;
+    grid-template-areas:
+    "box1 box2 box3 box4";
+}
+
+.box-servico-img-text{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 15px;
+}
+
+.meta-paralax{
+    background-image: url(imagens/templates/meta-paralax.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-attachment: fixed;
+    height: 40rem;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.384) 15px -5px 15px;
+}
+
+.meta-paralax-text{
+    max-width: 500px;
+    margin-left: 50%;
+}
+
+.meta-paralax h1{
+    font-family: Gobold Bold;
+    font-size: 3.5rem;
+    padding: 5rem 0;
+    text-align: center;
+    padding: 5rem ;
+}
+
+.meta-paralax p{
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 15px;
+    font-weight: 800;
+}
+
+.contatos{
+    background-color: #0B0A0A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+}
+
+.box-contatos{
+    max-width: 550px;
+    text-align: center;;
+    color: #ffffff;
+}
+
+.contatos h1{
+    font-family: Gobold Bold;
+    font-size: 3.5rem;
+    padding: 5rem 0;
+}
+
+.contatos p{
+    font-size: 1.6rem;
+}
+
+.contatos-redes-sociais img{
+    width: 50px;
+    padding-top: 8rem;
+    margin: 0 30px;
+}
+
+.img-contatos{
+    width: 600px;
+}
+
+
+footer{
+    background-color: #F9F900;
+}
+
+.fundo-ondulado-amarelo{
+    height: 100px;
+    width: 100%;
+    margin-top: -40px;
+}
+
+
+.footer-img-text{
+    margin-top: -50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-footer{
+    width: 50px;
+    height: 50px;
+    border-radius: 300px;
+    border: solid 1.5px black;
+    margin: 10px;
+}
+
+.img-endereco{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.img-endereco img{
+    width: 25px
+}
+
+footer hr{
+    background-color: #0b0a0a8c;
+    padding:0.5px;
+    border: none;
+    margin: 25px 0;
+    max-width: 1000px;
+    margin: auto
+}
+
+
+.direitos-autorais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px
+}
+
+.direitos-autorais p{
+    font-size: 0.8rem;
+    font-family: Espera;
+    font-weight: 600;
+    padding: 5px 10px;
+    color: #0B0A0A;
+}
+
+.direitos-autorais a{
+    color: #001aff;
+}
+
+
+/* ---------------------------------------------------------------------*/
+/* PARTE REPULSIVA DO SITE */
+
+@media (max-width: 900px) {
+
+    .header-paralax{
+        background-image: url(imagens/templates/img-mobile.png);
+        height: 40rem;
+    }
+
+    .header-paralax h1{
+        font-size: 4rem;
+        padding-top: 80px;
+    }
+
+    .header-paralax .text-h1{
+        font-size: 1.4rem
+    }
+
+    .header-paralax p{
+        font-size: 1.2rem;
+    }
+
+    .quem-somos h1, .servicos h1, .meta-paralax h1, .contatos h1{
+            font-size: 2.1rem;
+    }
+
+    /* PARTE DO MENU MOBILE */
+    .nav{
+        display: none;
+    }
+
+    .box-menu{
+        background: none;
+    }
+
+    .box-menu img{
+        display: none
+    }
+
+    .box-largura-menu{
+        justify-content: flex-end;
+    }
+    .nav-button{
+        display: block;
+
+    }
+
+    .overlay{
+        display: block;
+        height: 100%;
+        background-color: #dbdb0ed8;
+        z-index: 9;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+        transition: ease-in 0.5s;
+    }
+
+
+    .overlay-content{
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay a{
+        padding: 8px;
+        text-decoration: none;
+        color: #0B0A0A;
+        display: block;
+        font-family: Gobold Bold;
+        font-weight: 300;
+        font-size: 25px;
+        transition: 0.3s;
+    }
+
+    .overlay a:hover, .overlay a:focus{
+        color: #333333;
+    }
+
+    .overlay .closebtn{
+        position: absolute;
+        top: 1px;
+        right:25px;
+        font-size: 60px;
+    }
+
+    .fundo-ondulado{
+        width: 100%;
+        height: 80rem;
+        margin-top: -30px;
+        
+    }
+
+    .img-contatos{
+        width: 250px;
+    }
+
+    .quem-somos p, .meta-paralax p, .contatos p{
+        font-size: 1.1rem;
+    }
+
+    .direitos-autorais p{
+        font-size: 0.6rem;
+    }
+
+
+}
+
+/* ----------------------------------------------------------------------------------*/
+
+@media (max-width:750px) {
+
+    .box-menu img{ 
+        width: 60px;
+        height: 60px; 
+    }
+
+    .header-paralax h1{
+        font-size: 3.5rem;
+        margin-top: 4rem;
+    }
+
+    .header-paralax .text-h1{
+        font-size: 1.2rem
+    }
+
+    .header-paralax p{
+        font-size: 1.1rem;
+        max-width: 400px;
+    }
+
+    .header-paralax .fundo-ondulado{
+        margin-top: 3rem;
+        height: 300px;
+        margin-top: -40px;
+    }
+
+    .quem-somos-text-img img{
+        width: 300px;
+    }
+
+    .quem-somos p{
+        font-size: 1.1rem;
+        max-width: 500px;
+    }
+
+    .quem-somos-box-text{
+        font-size: 1.1rem;
+    }
+
+    .box-servicos{
+        display: grid;
+        grid-template-areas:
+        "box1 box2";
+    }
+
+    .meta-paralax-text{
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .meta-paralax p{
+        font-size: 1.1rem;
+    }
+
+    .contatos p{
+        font-size: 1.1rem;
+    }
+
+    .img-contatos{
+        width: 300px;
+    }
+}
+
+/* -----------------------------------------------------------------------------------*/
+
+
+@media (max-width:500px) {
+
+    .header-paralax {
+        background-image: url(imagens/templates/inicio-mobile-2.png);
+        height: 45rem;
+    }
+
+    .header-paralax p{
+        font-size: 1rem;
+        max-width: 300px
+    }
+
+    .header-paralax .text-h1{
+        margin-right: 15px;
+    }
+
+    .header-paralax .redes-sociais img{
+        width: 40px;
+        margin: 0 30px;
+    }
+
+    .header-paralax .fundo-ondulado{
+        margin-top: 10rem;
+        height: 300px;
+        margin-top: 35px
+    }
+
+    .quem-somos h1, .servicos h1, .meta-paralax h1, .contatos h1{
+        font-size: 2rem;
+}
+
+    .quem-somos p, .meta-paralax p, .contatos p{
+        font-size: 1rem;
+    }
+
+    .quem-somos-box-cor{
+        width: 300px;
+        height: 250px;
+    }
+
+    .box-text p{
+        font-size: 15px;
+    }
+
+    .contatos-redes-sociais img{
+        width: 40px;
+        margin: 0 30px;
+    }
+
+    .direitos-autorais p{
+        text-align: center;
+    }
+
+
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

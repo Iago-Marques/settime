@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+ /* FONTE DE TEXTO DO SITE */
+@font-face {
+    font-family:Gobold Bold;
+    src: url(fonts/Gobold\ Bold\ Italic.otf) format('opentype');
+}
+
+@font-face {
+    font-family: Espera;
+    src: url(fonts/Espera-Italic.ttf) format('opentype');
+}
+
+/* INTERAÇÃO SUAVE ENTRE MENU */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100%;
+    background-color: #dbdbdb;
+}
+
+header{
+    padding-bottom: 4rem;
+}
+
+/* IMAGEM HEADER */
+.header-paralax3{ 
+    background-image: url(imagens/templates/resultados-web.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fundo-ondulado-3{
+    height: 25rem;
+    width: 100%;
+    margin-top: 185px
+}
+
+/* BOX DO MENU INTERAÇÃO */
+.box-menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    background-color: #0b0a0a9f;
+}
+
+
+
+/* LARGURA DO BOX MENU */
+.box-largura-menu{
+    width: 1200px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+/* IMAGEM DO MENU */
+.box-largura-menu img{ 
+    height: 65px;
+    width: 65px;
+    border-radius: 400px;
+}
+
+/* TEXTO DO MENU */
+.nav ul{
+    display: flex;
+    gap: 25px;
+}
+
+/* TEXTO DO MENU 2 */ 
+.nav ul li{ 
+    color: #ffff;
+    font-family: Espera;
+    font-size: 1.1rem;
+}
+
+
+/* ANIMAÇÃO NO TEXTO MENU */
+.nav ul li:hover{
+    color: rgb(145, 145, 9);
+    transition-duration: 0.5s;
+}
+
+.resultado{
+    background-color: #bbbb07;
+    padding: 2px 8px;
+    border-radius: 15px;
+}
+
+.resultado:hover{
+    background-color: #ffff00;
+    animation-duration: 0.8s;
+}
+
+.header-paralax3 h1{
+    font-family: Gobold Bold;
+    color: #bbbb07;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 15rem;
+}
+
+
+.resultados-content{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.box-resultados{
+    max-width: 400px;
+    padding: 25px 25px 200px 25px;
+}
+
+.box-resultados img{
+    height: 300px;
+    width: 350px;
+}
+
+.box-resultados nav{
+    width: 100%;
+}
+
+.dropdown-menu{
+    display: flex;
+    gap: 2px;
+}
+
+.dropdown-menu li{
+    width: 100%;
+    height: 35px;
+    list-style: none;
+}
+
+.dropdown-menu a{
+    display: block;
+    background-color: #bbbb07;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-menu li:hover > a{
+    background-color: rgb(15, 13, 13);
+    color: rgb(219, 210, 210);
+    
+}
+
+.dropdown-menu li:hover > .dropdown-submenu{
+    display: block;
+}
+
+.dropdown-submenu{
+    margin-top: 1px;
+    display: none;
+    
+}
+
+.dropdown-submenu a{
+    background-color: rgba(255, 230, 0, 0.884);
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5px;
+    border-left: 5px solid black;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/**----------------------------------------------------------*/
+
+
+@media (max-width: 900px) {
+
+    .header-paralax3{
+        background-image: url(imagens/templates/resultados-mobile.png);
+    }
+
+    .header-paralax2 h1{
+        font-size: 4rem
+    }
+}
+
+@media (max-width: 450px) {
+
+    .header-paralax3{
+        background-image: url(imagens/templates/resultados-mobile-2.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .header-paralax3 h1{
+        font-size: 3.5rem;
+    }
+}
